@@ -1,0 +1,124 @@
+body {
+  color: #fff;
+  font-family: Source Code Pro, sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.animated-button {
+  width: 177px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(0deg, #1B1B1B, #1B1B1B),
+  radial-gradient(61.23% 111.54% at 91.19% 92.5%, rgba(69, 162, 255, 0.35) 0%, rgba(69, 162, 255, 0) 100%);  
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.animated-button.color {
+  animation: shadow-circle 3s linear infinite;
+}
+
+@keyframes shadow-circle {
+  0% {
+    box-shadow:
+      32px -8px 44px 0px rgba(114, 208, 255, 0.77),
+      -2px 2px 16px 0px rgba(12, 149, 253, 0.8) inset,
+      -1px -1px 3px 0px rgba(0, 0, 0, 0.6) inset,
+      12px -8px 22px -4px rgba(0, 63, 252, 0.6),
+      2px -2px 6px 0px rgba(15, 28, 172, 0.3),
+      1px -1px 2px 0px rgba(255, 255, 255, 0.44);
+  }
+  25% {
+    box-shadow:
+      32px 8px 44px 0px rgba(114, 208, 255, 0.77),
+      -2px -2px 16px 0px rgba(12, 149, 253, 0.8) inset,
+      -1px -1px 3px 0px rgba(0, 0, 0, 0.6) inset,
+      12px 8px 22px -4px rgba(0, 63, 252, 0.6),
+      2px 2px 6px 0px rgba(15, 28, 172, 0.3),
+      1px 1px 2px 0px rgba(255, 255, 255, 0.44);
+  }
+  50% {
+    box-shadow:
+      -32px 8px 44px 0px rgba(130, 255, 237, 0.77),
+      2px -2px 16px 0px rgba(1, 179, 154, 0.8) inset,
+      1px -1px 3px 0px rgba(0, 0, 0, 0.6) inset,
+      -12px 8px 22px -4px rgba(0, 255, 219, 0.6),
+      -2px 2px 6px 0px rgba(29, 147, 106, 0.3),
+      -1px 1px 2px 0px rgba(255, 255, 255, 0.44);
+  }
+  75% {
+    box-shadow:
+      -32px -8px 44px 0px rgba(130, 255, 237, 0.77),
+      2px -2px 16px 0px rgba(1, 179, 154, 0.8) inset,
+      1px 1px 3px 0px rgba(0, 0, 0, 0.6) inset,
+      -12px -8px 22px -4px rgba(0, 255, 219, 0.6),
+      -2px -2px 6px 0px rgba(29, 147, 106, 0.3),
+      -1px -1px 2px 0px rgba(255, 255, 255, 0.44);
+  }
+  100% {
+    box-shadow:
+      32px -8px 44px 0px rgba(114, 208, 255, 0.77),
+      -2px 2px 16px 0px rgba(12, 149, 253, 0.8) inset,
+      -1px -1px 3px 0px rgba(0, 0, 0, 0.6) inset,
+      12px -8px 22px -4px rgba(0, 63, 252, 0.6),
+      2px -2px 6px 0px rgba(15, 28, 172, 0.3),
+      1px -1px 2px 0px rgba(255, 255, 255, 0.44);
+  }
+}
+
+.animated-button span {
+  margin-right: 8px;
+}
+
+.animated-button svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  transition: transform 0.3s ease;
+}
+
+.animated-button:hover svg {
+  transform: translateX(5px);
+}
+
+.animated-button.color:hover {
+  background:
+    linear-gradient(0deg, #1B1B1B, #1B1B1B),
+    radial-gradient(54.8% 141.53% at 5.93% 41.67%, rgba(34, 234, 206, 0.2) 0%, rgba(34, 234, 206, 0) 100%),
+    radial-gradient(61.23% 111.54% at 91.19% 92.5%, rgba(69, 162, 255, 0.25) 0%, rgba(69, 162, 255, 0) 100%);
+  box-shadow:
+    0px 0px 16px 0px rgba(1, 179, 154, 0.8) inset,
+    0px 0px 3px 0px rgba(0, 0, 0, 0.6) inset,
+    32px 0px 44px 0px rgba(114, 208, 255, 0.77),
+    -32px 0px 44px 0px rgba(130, 255, 237, 0.77),
+    -12px 0px 22px -4px rgba(0, 255, 219, 0.6),
+    0px 0px 6px 0px rgba(29, 147, 106, 0.3),
+    12px 0px 22px -4px rgba(0, 63, 252, 0.6),
+    2px 0px 6px 0px rgba(15, 28, 172, 0.3),
+    -1px -1px 2px 0px rgba(255, 255, 255, 0.44),
+    1px 1px 2px 0px rgba(255, 255, 255, 0.44);
+  animation: none !important;
+}
